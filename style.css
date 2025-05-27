@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ 
+body{
+    background-color: black;
+}
+ 
+.main{
+    background-image: url("assets/bg.jpg");
+    height: 80vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.main .box{
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.70;
+    background-color: rgb(0, 0, 0);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 60vw;
+    align-items: center;
+    height: 70px;
+}
+
+nav img{
+    width: 180px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    height: calc(100% - 70px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    z-index: 10;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1){
+    font-size: 50px;
+    font-weight: 700;
+    font-family:  "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    text-align: center;
+}
+
+.hero>:nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    text-align: center;
+}
+
+.line{
+    height: 7px;
+    background-color: rgba(44, 42, 42, 0.897);
+}
+
+.btn{
+    padding:3px 18px;
+    color: whitesmoke;
+    border: 1px solid rgba(250, 247, 247, 0.5);
+   font-weight: bold;
+    background-color: rgba(36, 36, 36, 0.568);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red{
+    background-color: rgb(214, 4, 4);
+    color: white;
+    padding:11px 34px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+
+.main input{
+    background-color: rgba(22, 22, 22, 0.7);
+    border: 1px solid rgba(250, 247, 247, 0.5);
+    color: white;
+    padding: 7px 135px 20px 14px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; 
+}
+
+.flex{
+    display: flex;
+    gap: 12px;
+}
+
+section{
+    height: 70vh;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    color: #fff;
+}
+
+@media screen and (max-width: 900px){
+    .first{
+        flex-wrap: wrap;
+    }
+}
+
+.image1{
+    position: relative;
+}
+
+.image1 img{
+    width: 480px;
+    position: relative;
+    z-index: 10;
+}
+
+.image1 video{
+    position: absolute;
+    top: 74px;
+    left: 65px;
+   width: 400px;
+}
+
+section.first > div{
+    display: flex;
+   flex-direction: column;
+    gap: 3px;
+   padding: 34px 0;
+}
+
+.first> div :nth-child(1){
+    font-size: 48px;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 900;
+}
+
+.first> div :nth-child(2){
+    font-size: 22px;
+    font-weight: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-se;
+    font-weight: 400;
+}
+
+.faq h2{
+    text-align: center;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-se;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 8px;
+}
+
+.faq{
+    background-color: black;
+    color: #fff;
+    padding: 34px;
+    
+}
+
+.faqbox{
+    display: flex;
+    transition: all 1s ease-out;
+    justify-content: space-between;
+    background-color: rgb(39, 39, 39);
+    padding: 18px;
+    max-width: 70vw;
+    margin:8px auto;
+    cursor: pointer;
+}
+
+.faqbox span{
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-se;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.faqbox:hover{
+    background-color: rgb(87, 87, 87);
+}  
+
+footer{
+    color: #fff;
+    max-width: 60vw;
+    margin: auto;
+    padding: 24px;
+}
+
+footer .span{
+    padding: 34px 0;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
